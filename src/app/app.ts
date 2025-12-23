@@ -1,13 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Display } from './display/display';
-import { Buttons } from './buttons/buttons';
+import { Button } from './button/button';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Buttons , Display],
+  imports: [RouterOutlet, Button],
   templateUrl: './app.html',
-  styleUrls: ['./app.css'] // Corrected here
+  styleUrls: ['./app.css'] 
 })
 export class App {
   protected readonly title = signal('calculator');
