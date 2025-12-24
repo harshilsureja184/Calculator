@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import { Calcservice } from '../calcservice';
-import { Button } from '../button/button';
 
 @Component({
   selector: 'app-mathoperations',

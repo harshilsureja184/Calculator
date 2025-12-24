@@ -1,23 +1,23 @@
 <app-mathoperations></app-mathoperations>
 
-<div class="grid">
-<button type="button" (click)="clear()">C</button>
-  <button (click)="operator('/')">/</button>
-  <button (click)="operator('')"></button>
-  <button (click)="operator('-')">-</button>
-
-  <button (click)="number(7)">7</button>
-  <button (click)="number(8)">8</button>
-  <button (click)="number(9)">9</button>
-  <button (click)="operator('+')">+</button>
-
-  <button (click)="number(4)">4</button>
-  <button (click)="number(5)">5</button>
-  <button (click)="number(6)">6</button>
-  <button (click)="equal()">=</button>
-
-  <button (click)="number(1)">1</button>
-  <button (click)="number(2)">2</button>
-  <button (click)="number(3)">3</button>
-  <button (click)="number(0)">0</button>
+<div class="calculator">
+  <div class="calculator__keys">
+    <button class="calculator__key calculator__key--operator" (click)="operator('+')">+</button>
+    <button class="calculator__key calculator__key--operator" (click)="operator('-')">-</button>
+    <button class="calculator__key calculator__key--operator" (click)="operator('*')">&times;</button>
+    <button class="calculator__key calculator__key--operator" (click)="operator('/')">÷</button>
+    <button class="calculator__key" (click)="number(7)">7</button>
+    <button class="calculator__key" (click)="number(8)">8</button>
+    <button class="calculator__key" (click)="number(9)">9</button>
+    <button class="calculator__key" (click)="number(4)">4</button>
+    <button class="calculator__key" (click)="number(5)">5</button>
+    <button class="calculator__key" (click)="number(6)">6</button>
+    <button class="calculator__key" (click)="number(1)">1</button>
+    <button class="calculator__key" (click)="number(2)">2</button>
+    <button class="calculator__key" (click)="number(3)">3</button>
+    <button class="calculator__key" (click)="number(0)">0</button>
+    <button class="calculator__key" (click)="number('.')">.</button>
+    <button class="calculator__key" type="button" (click)="clear()">AC</button>
+    <button class="calculator__key calculator__key--enter" (click)="equal()">=</button>
+  </div>
 </div>
