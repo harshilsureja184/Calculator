@@ -16,7 +16,7 @@ export class Button {
     if (this.calc.isFinished) this.clear();
 
     // Get last number part (after last operator)
-    const parts = this.calc.result.split(' ');
+    const parts = this.calc.result.split('');
     const lastPart = parts[parts.length - 1];
 
     // Prevent multiple decimals in the same number
